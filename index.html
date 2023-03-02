@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-11</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+	<style>
+		*{
+			box-sizing:border-box;
+		}
+		.container{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			margin:0 auto;
+			width:1000px;
+		}
+		.left{
+			margin:20px;
+			padding:40px;
+			height:30vh;
+			width:1000px;
+			box-shadow:0 0 10px #ccc;
+			text-align:center;
+		}
+		.rightin{
+			display:flex;
+			flex-wrap:wrap;
+			align-items:center;
+			margin:20px;
+			padding:40px;
+			width:1000px;
+			box-shadow:0 0 10px #ccc;
+		}
+		textarea{
+			border:1px soild #ccc;
+			height:60px;
+			width:100%;
+			padding:10px;
+		}
+		button{
+			width:20%;
+			background-color:#3EC7D0;
+			color:#fff;
+			font-size:18px;
+			border:0;
+			padding:10px;
+			margin-top:10px;
+			cursor:pointer;
+		}
+		button:hover{
+			opacity:0.8;
+		}
+		h3{
+			color:#3EC7D0;
+		}
+		.col-lg-3{
+			width:30%;
+		}
+		.col-lg-6{
+			width:70%;
+			flex:0 0 auto;
+			flex-wrap:wrap;
+		}
+		#post .rightin p{
+			color:#BB6526;
+			font-size:20px;
+		}
+		.option{
+			width:100%;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		iconify-icon{
+			font-size:35px;
+			margin-left:10px;
+			margin-bottom:20px;
+			color:#3EC7D0;
+			cursor:pointer;
+			margin-top:30px;
+		}
+		.like{
+			color:gray;
+		}
+		img{
+			width:100%;
+			height:auto;
+		}
+		.time{
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:flex-end;
+			color:#3EC7D0;
+			width:100%;
+		}
+	</style>	
+</head>
+<body>
+	<div class="container">
+		<div class="left">
+			<form>
+				<textarea name="name" id="name" placeholder="Write your Discription Here" maxlength="100"></textarea><br>
+				<button id="submit">POST</button>
+			</form>
+		</div>
+		<div class="right">
+			<div id="post">
+				
+			</div>
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>	
